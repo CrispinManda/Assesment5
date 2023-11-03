@@ -1,0 +1,27 @@
+POST http://localhost:4400/employee/register
+Content-Type: application/json
+
+{
+    "name": "Crispin Manda",
+    "email": "crispinmanda06@gmail.com",
+    "password": "12345678"
+}
+
+
+### login 
+POST http://localhost:4400/employee/login
+Content-Type: application/json
+
+{
+    "email": "crispinmanda06@gmail.com",
+    "password": "12345678"
+}
+
+### fetching employees
+GET http://localhost:4400/employee/
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZV9pZCI6IjU2NDRiNzQ3LTZhMGQtNGE1Yi05YzZjLTI3ZjkyNjJmMjgxNSIsIm5hbWUiOiJDcmlzcGluIE1hbmRhIiwiZW1haWwiOiJjcmlzcGlubWFuZGEwNkBnbWFpbC5jb20iLCJyb2xlIjoiZW1wbG95ZWUiLCJpYXQiOjE2OTg4NzE4ODAsImV4cCI6MTY5ODg3NTQ4MH0.0iVYOsqGKLLKGHxU2Qv0bIiCdHxmk9w-BHHGQp3Vero
+
+
+### checking user details
+GET http://localhost:4400/employee/check_user_details
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZV9pZCI6IjU2NDRiNzQ3LTZhMGQtNGE1Yi05YzZjLTI3ZjkyNjJmMjgxNSIsIm5hbWUiOiJDcmlzcGluIE1hbmRhIiwiZW1haWwiOiJjcmlzcGlubWFuZGEwNkBnbWFpbC5jb20iLCJyb2xlIjoiZW1wbG95ZWUiLCJpYXQiOjE2OTg4NzIxMDMsImV4cCI6MTY5ODg3NTcwM30.ODy8sm_bp9qH8r0QCQZZ_t0ia0YGNBiXCfUMq0MsekM
